@@ -27,9 +27,14 @@ def sentence():
         sen=rng.choice(name_person)+'여! '+rng.choice(name_place)+'로 초대하지.'
     elif sentence_type == 2:
         tmp1=rng.choice(c2)
-        if tmp1[-1:]!='가':
+        tmp2=rng.choice(c2)
+        while (tmp1==tmp2):
+            tmp2=rng.choice(c2)
+        if tmp1[-1:]=='가':
+            tmp1=tmp1[:-1]
+        if tmp2[-1:]!='가':
             tmp1=tmp1[:-1]+'이'
-        sen=rng.choice(c2)+'에 이끌린 '+rng.choice(name_person)+'여, 이 몸에 깃든 '+tmp1+' '+rng.choice(verb)+'.'
+        sen=tmp1+'에 이끌린 '+rng.choice(name_person)+'여, 이 몸에 깃든 '+tmp2+' '+rng.choice(verb)+'.'
     elif sentence_type == 3:
         tmp1=rng.choice(c2)
         tmp2=rng.choice(c2)
