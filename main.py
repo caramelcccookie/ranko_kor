@@ -17,7 +17,7 @@ verb = ['초대한다', '인도한다', '부른다', '공명한다','내려온�
 '''
 
 def sentence():
-    #def sentence(sentence_type):
+#def sentence(sentence_type):
     sen = '..'
     sentence_type = rng.randrange(0,5)
     if sentence_type == 0:
@@ -33,7 +33,7 @@ def sentence():
         if tmp1[-1:]=='가':
             tmp1=tmp1[:-1]
         if tmp2[-1:]!='가':
-            tmp1=tmp1[:-1]+'이'
+            tmp2=tmp2+'이'
         sen=tmp1+'에 이끌린 '+rng.choice(name_person)+'여, 이 몸에 깃든 '+tmp2+' '+rng.choice(verb)+'.'
     elif sentence_type == 3:
         tmp1=rng.choice(c2)
