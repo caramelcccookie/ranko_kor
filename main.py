@@ -19,7 +19,7 @@ verb = ['초대한다', '인도한다', '부른다', '공명한다','내려온�
 def sentence():
 #def sentence(sentence_type):
     sen = '..'
-    sentence_type = rng.randrange(0,5)
+    sentence_type = rng.randrange(-1,5)
     if sentence_type == 0:
         sen = rng.choice(name_chu2)[:-1]+'에 환멸했다냥. 타천사를 시험하려든 미쿠냥 팬 그만두겠냥!'
     elif sentence_type == 1:
